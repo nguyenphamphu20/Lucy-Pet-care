@@ -105,9 +105,12 @@ header {
     display: flex;
 }
 
-.hero__img-gallery,
+.hero__img-gallery {
+    width: 47%;
+}
+
 .hero-content {
-    width: 50%;
+    width: 53%;
 }
 
 .hero__img-gallery {
@@ -116,12 +119,14 @@ header {
 
 .hero__item-img {
     border-radius: 16px;
+    border: 3px solid #fff;
 }
 
 .hero__item-img--large {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 
     width: 388px;
     height: 488px;
@@ -129,9 +134,96 @@ header {
 }
 
 .hero__item-img--small {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+
     width: 186px;
     height: 244px;
     background: #faa7ad;
+    z-index: 2;
+}
+
+.hero__item-sp {
+    position: absolute;
+    top: 0;
+    left: 376px;
+}
+
+.hero__item-cir {
+    position: absolute;
+    top: 245px;
+    left: -57.5px;
+}
+
+.hero-info-service {
+    position: absolute;
+    bottom: 0;
+    right: 171px;
+    z-index: 3;
+    padding: 19px 17px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-info-service__row {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+}
+
+.hero-info-service__row:first-child {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hero-info-service__row:last-child {
+    margin-top: 20px;
+}
+
+.hero-info-service__row:first-child::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+.hero-info-service__sub-title {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #181e52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-info-service__sub-title::before {
+    display: block;
+    content: "";
+    width: 118px;
+    height: 4px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    order: 3;
+}
+
+.hero-info-service__sub-title::after {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 4px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    order: 2;
 }
 
 .hero-info-service__img {
