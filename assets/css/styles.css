@@ -36,11 +36,27 @@ body {
 a {
     display: inline-block;
 }
+
+img {
+    object-fit: cover;
+}
+
+.heading-1 {
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
 /* header */
 header {
+    position: sticky;
+    left: 0;
+    top: -18px;
     background: #fffaf5;
     padding-top: 26px;
     padding-bottom: 8px;
+    z-index: 999;
 }
 
 .header-fixed {
@@ -79,7 +95,7 @@ header {
 }
 
 .header__btn {
-    color: #000958;
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1;
@@ -88,4 +104,206 @@ header {
 
 .header__btn:hover {
     scale: 1.1 1.1;
+}
+
+/* hero */
+.hero {
+    padding: 92px;
+    background: #fffaf5;
+}
+
+.hero-warp {
+    height: 620px;
+    display: flex;
+}
+
+.hero__img-gallery {
+    width: 47%;
+}
+
+.hero-content {
+    width: 53%;
+}
+
+.hero__img-gallery {
+    position: relative;
+}
+
+.hero__item-img {
+    border-radius: 16px;
+    border: 3px solid #fff;
+}
+
+.hero__item-img--large {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 388px;
+    height: 488px;
+    background: #fe997b;
+}
+
+.hero__item-img--small {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+
+    width: 186px;
+    height: 244px;
+    background: #faa7ad;
+    z-index: 2;
+}
+
+.hero__item-sp {
+    position: absolute;
+    top: 0;
+    left: 376px;
+}
+
+.hero__item-cir {
+    position: absolute;
+    top: 245px;
+    left: -57.5px;
+}
+
+.hero-info-service {
+    position: absolute;
+    bottom: 0;
+    right: 171px;
+    z-index: 3;
+    padding: 19px 17px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-info-service__row {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+}
+
+.hero-info-service__row:first-child {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hero-info-service__row:last-child {
+    margin-top: 20px;
+}
+
+.hero-info-service__row:first-child::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+
+.hero-info-service__sub-title {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #181e52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-info-service__sub-title::before {
+    display: block;
+    content: "";
+    width: 118px;
+    height: 4px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    order: 3;
+}
+
+.hero-info-service__sub-title::after {
+    display: block;
+    content: "";
+    width: 39px;
+    height: 4px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    order: 2;
+}
+
+.hero-info-service__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.hero-info-service__img--yellow {
+    background: #fec23f;
+}
+.hero-info-service__img--blue-sky {
+    background: #6597c2;
+}
+
+.hero-content {
+    margin-left: 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero__heading {
+    width: 517px;
+}
+
+.hero-desc {
+    margin-top: 24px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.hero__cta {
+    margin-top: 38px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.hero__cta-btn {
+    min-width: 189px;
+    height: 60px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    background: #ff5b2e;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    transition: scale linear 0.2s;
+}
+
+.hero__cta-btn:hover {
+    scale: 1.1 1.1;
+}
+
+.hero__link {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
