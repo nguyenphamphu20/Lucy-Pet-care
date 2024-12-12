@@ -276,6 +276,7 @@ header {
 }
 
 .hero__heading {
+    --line-clamp: 3;
     width: 517px;
 }
 
