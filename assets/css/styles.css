@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Poppins;
+    background: #fffaf5;
 }
 
 /* common */
@@ -47,6 +48,14 @@ img {
     font-size: 6.6rem;
     font-weight: 800;
     line-height: 1.15;
+}
+
+.heading-2 {
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
 }
 /* header */
 header {
@@ -306,4 +315,80 @@ header {
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
+}
+
+/* about */
+.about {
+    padding-top: 161px;
+}
+
+.main-about {
+    display: flex;
+    align-items: center;
+}
+
+.about-content,
+.about__img-gallery {
+    width: 50%;
+}
+
+.about__heading {
+    width: 446px;
+}
+
+.about__desc {
+    margin-top: 24px;
+    width: 431px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.about__grid {
+    margin-top: 24px;
+    display: grid;
+    gap: 36px 34px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about__item-grid:has([type="checkbox"]:checked) label::after {
+    opacity: 1;
+}
+
+.about__item-grid label {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.about__item-grid label::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    border-radius: 6px;
+}
+
+.about__item-grid label::after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 6px;
+    border-left: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+    border-radius: 2px;
+    rotate: -45deg;
+    opacity: 0;
+    transition: opacity ease 0.1s;
 }
