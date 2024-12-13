@@ -469,3 +469,145 @@ header {
     font-weight: 400;
     line-height: 1.43;
 }
+
+.about__info img {
+    position: absolute;
+    top: -37px;
+    right: -32px;
+}
+
+/* features */
+
+.features {
+    margin-top: 146px;
+}
+
+.main-features {
+    display: flex;
+}
+
+.features__img-gallery {
+    width: 39%;
+    position: relative;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.features__img {
+    width: 100%;
+}
+
+.features__icon {
+    position: absolute;
+}
+
+.features__icon--pos-1 {
+    top: 13px;
+    right: 63px;
+}
+
+.features__icon--pos-2 {
+    top: -16px;
+    right: 13px;
+}
+
+.features__icon--pos-3 {
+    top: 33px;
+    right: -21px;
+}
+
+.features__icon--pos-4 {
+    top: 260px;
+    right: -33px;
+}
+
+.features__icon--pos-5 {
+    top: 336px;
+    right: 19px;
+}
+
+.features__icon--pos-6 {
+    bottom: -55px;
+    right: -42px;
+}
+
+.features__content {
+    margin-top: 36px;
+    margin-left: 127px;
+}
+
+.features__heading {
+    width: 543px;
+}
+
+.features__desc {
+    margin-top: 24px;
+    width: 511px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.features__group {
+    position: relative;
+    padding-bottom: 5px;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.features__group::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 20%;
+    height: 2px;
+    border-radius: 999px;
+    background: #ff5b2e;
+}
+
+.features__group::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    opacity: 0.07;
+    background: #ff5b2e;
+    border-radius: 999px;
+}
+
+.features__item {
+    display: flex;
+    align-items: center;
+}
+
+.features__item-icon--fixed {
+    margin-top: 8px;
+}
+
+.features__desc-group {
+    margin-top: 36px;
+    width: 391px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.features__link {
+    margin-top: 32px;
+    text-decoration: underline;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
