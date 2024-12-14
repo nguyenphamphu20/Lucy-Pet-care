@@ -606,6 +606,10 @@ header {
 .features__link {
     margin-top: 32px;
     text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-underline-position: under;
     color: #ff5d31;
     font-size: 1.6rem;
     font-weight: 500;
