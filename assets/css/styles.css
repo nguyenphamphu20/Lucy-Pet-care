@@ -619,7 +619,7 @@ header {
 /* services */
 .services {
     margin-top: 195px;
-    padding: 68px 0 100px;
+    padding: 68px 0 139px;
     background: #fff6ed;
 }
 
@@ -650,6 +650,8 @@ header {
 }
 
 .services__group-grid {
+    position: relative;
+    top: 17px;
     grid-area: img-gallery;
     display: flex;
     flex-direction: column;
@@ -735,7 +737,7 @@ header {
 }
 
 .services__btn {
-    color: #FF5B2E;
+    color: #ff5b2e;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1;
@@ -749,5 +751,116 @@ header {
 }
 
 .services__btn:hover {
+    opacity: 0.6;
+}
+
+/* Team */
+.team {
+    margin-top: 130px;
+}
+
+.team-top__title {
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.team__heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.team-list {
+    margin-top: 59px;
+    display: flex;
+    gap: 37px;
+}
+
+.item-team {
+    display: flex;
+    width: 277px;
+    height: 338px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-team:nth-child(odd) svg {
+    bottom: 0;
+}
+
+.item-team:nth-child(even) svg {
+    top: 10px;
+}
+
+.item-team__group {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.item-team__group::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 234px;
+    height: 266px;
+    border-radius: 129.5px;
+    background: currentColor;
+    z-index: -1;
+}
+
+.item-team__group svg {
+    position: absolute;
+    left: 0;
+}
+
+.item-team__img {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 1;
+    border-bottom-right-radius: 129.5px;
+    border-bottom-left-radius: 129.5px;
+}
+
+
+.item-team__title {
+    margin-top: 34px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.item-team__name {
+    color: var(--primary-color);
+    margin-top: 14px;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.team-btn {
+    margin: 70px auto;
+    width: 193px;
+    height: 56px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; 
+    transition: box-shadow ease 0.2s, opacity ease 0.2s;
+    opacity: 1;
+}
+
+.team-btn:hover {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
     opacity: 0.6;
 }
