@@ -1029,6 +1029,7 @@ header {
 
 .main-feedback {
     height: 491px;
+    position: relative;
 }
 
 .feedback__item {
@@ -1037,7 +1038,7 @@ header {
 
 .feedback__images {
     position: relative;
-
+    margin-left: 64px;
     width: 29%;
 }
 
@@ -1097,4 +1098,70 @@ header {
     width: 20px;
     height: 2px;
     background: #000;
+}
+
+.feedback__group-control {
+    width: 72px;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-105%);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.feedback__dot {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ff5b2e;
+    border-radius: 50%;
+    transform: translateX(32px);
+    /* đổi thành bội số của 16px là có thể di chuyển */
+}
+
+.feedback__dot--special {
+    flex-shrink: 0;
+    display: inline-block;
+    border-radius: 999px;
+    width: 24px;
+    height: 8px;
+    background: #ff5b2e;
+}
+
+.feedback__next svg {
+    transform: scaleX(-1);
+}
+
+.feedback__next,
+.feedback__previous {
+    color: #ff5b2e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+:is(.feedback__next, .feedback__previous):hover svg {
+    fill: #ff5b2e;
+    color: #fff;
+}
+
+.feedback__previous {
+    left: -82px;
+}
+
+.feedback__next {
+    right: -82px;
+}
+
+.feedback--active {
+    color: #fff;
+}
+
+.feedback--active svg {
+    fill: #ff5b2e;
 }
