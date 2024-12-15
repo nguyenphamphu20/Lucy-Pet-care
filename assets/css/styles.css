@@ -828,7 +828,6 @@ header {
     border-bottom-left-radius: 129.5px;
 }
 
-
 .item-team__title {
     margin-top: 34px;
     color: #656689;
@@ -855,7 +854,7 @@ header {
     color: #ff5b2e;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 1; 
+    line-height: 1;
     transition: box-shadow ease 0.2s, opacity ease 0.2s;
     opacity: 1;
 }
@@ -863,4 +862,162 @@ header {
 .team-btn:hover {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
     opacity: 0.6;
+}
+
+/* price */
+.price {
+    margin-top: 125px;
+    padding-top: 86px;
+    padding-bottom: 86px;
+    background: #fff6ed;
+}
+
+.price__heading {
+    text-align: center;
+}
+
+.price__desc {
+    margin: 24px auto 0;
+    width: 709px;
+    text-align: center;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.price__group-control {
+    display: flex;
+    margin: 38px auto 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+    height: 56px;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+}
+
+.price__link {
+    display: inline-block;
+    width: 131px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 31px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ff5b2e;
+    transition: background ease 0.2s, color ease 0.2s;
+}
+
+.price__link--active {
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.price__link:hover {
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.price-body {
+    margin-top: 56px;
+    display: flex;
+    gap: 44px;
+    justify-content: space-between;
+}
+
+.price-card {
+    padding: 30px 28px;
+    width: 302px;
+    height: 465px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
+.price-card__title {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.price-card__sub-title {
+    margin-top: 8px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.price-card strong {
+    margin-top: 24px;
+    display: block;
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.price__btn {
+    margin-top: 22px;
+    min-width: 246px;
+    height: 44px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: background ease 0.2s, color ease 0.2s;
+}
+
+.price__btn:hover {
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.price__btn--active {
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.price__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.price__item {
+    margin-left: 6px;
+    display: flex;
+    width: 300px;
+    gap: 12px;
+    align-items: center;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.price__item::before {
+    display: inline-block;
+    transform: translateY(-50%);
+    content: "";
+    color: red;
+    width: 8.7px;
+    height: 4.3px;
+    border-left: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    rotate: -45deg;
+    opacity: 0.4;
+}
+
+.price__item--active.price__item::before {
+    opacity: 1;
 }
