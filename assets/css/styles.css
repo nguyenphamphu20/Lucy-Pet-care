@@ -1021,3 +1021,147 @@ header {
 .price__item--active.price__item::before {
     opacity: 1;
 }
+
+/* feedback */
+.feedback {
+    margin-top: 32px;
+}
+
+.main-feedback {
+    height: 491px;
+    position: relative;
+}
+
+.feedback__item {
+    display: flex;
+}
+
+.feedback__images {
+    position: relative;
+    margin-left: 64px;
+    width: 29%;
+}
+
+.feedback__img {
+    position: relative;
+    z-index: 1;
+    vertical-align: bottom;
+
+    border-radius: 137px;
+}
+
+.feedback__images::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    background: #ffda54;
+}
+
+.feedback__content {
+    padding-left: 67px;
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback__desc {
+    width: 553px;
+    margin-top: 24px;
+
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.56;
+}
+
+.feedback__name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.feedback__name::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.feedback__group-control {
+    width: 72px;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-105%);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.feedback__dot {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ff5b2e;
+    border-radius: 50%;
+    transform: translateX(32px);
+    /* đổi thành bội số của 16px là có thể di chuyển */
+}
+
+.feedback__dot--special {
+    flex-shrink: 0;
+    display: inline-block;
+    border-radius: 999px;
+    width: 24px;
+    height: 8px;
+    background: #ff5b2e;
+}
+
+.feedback__next svg {
+    transform: scaleX(-1);
+}
+
+.feedback__next,
+.feedback__previous {
+    color: #ff5b2e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+:is(.feedback__next, .feedback__previous):hover svg {
+    fill: #ff5b2e;
+    color: #fff;
+}
+
+.feedback__previous {
+    left: -82px;
+}
+
+.feedback__next {
+    right: -82px;
+}
+
+.feedback--active {
+    color: #fff;
+}
+
+.feedback--active svg {
+    fill: #ff5b2e;
+}
