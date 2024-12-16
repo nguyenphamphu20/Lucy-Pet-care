@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- Embed font -->
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <!-- animation -->
+        <link rel="preconnect" href="https://unpkg.com" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <!-- font awesome -->
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link
@@ -65,7 +75,12 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero-warp">
-                        <figure class="hero__img-gallery">
+                        <figure
+                            class="hero__img-gallery animate__animated animate__bounce"
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
                             <img
                                 src="./assets/images/hero-1.png"
                                 alt="Established & Trusted Pet Care Service"
@@ -121,7 +136,9 @@
                                 </div>
                             </div>
                         </figure>
-                        <section class="hero-content">
+                        <section
+                            class="hero-content animate__bounceInRight animate__animated"
+                        >
                             <h1 class="hero__heading heading-1 line-clamp">
                                 Established & Trusted Pet Care Service
                             </h1>
@@ -147,7 +164,12 @@
                 <div class="container">
                     <div class="main-about">
                         <!-- content -->
-                        <section class="about-content">
+                        <section
+                            class="about-content"
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <div class="about__heading heading-2 line-clamp">
                                 Best Agency For Your Pet.
                             </div>
@@ -200,7 +222,12 @@
                             </div>
                         </section>
                         <!-- images -->
-                        <figure class="about__img-gallery">
+                        <figure
+                            class="about__img-gallery"
+                            data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <img
                                 src="./assets/images/about-1.png"
                                 alt=""
@@ -224,7 +251,12 @@
             <section class="features">
                 <div class="container">
                     <div class="main-features">
-                        <figure class="features__img-gallery">
+                        <figure
+                            class="features__img-gallery"
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <img
                                 src="./assets/images/features-1.png"
                                 alt=""
@@ -261,7 +293,12 @@
                                 class="features__icon features__icon--pos-6"
                             />
                         </figure>
-                        <section class="features__content">
+                        <section
+                            class="features__content"
+                            data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                        >
                             <h2 class="features__heading line-clamp heading-2">
                                 Taking A Vacation? So Is Your Pet.
                             </h2>
@@ -308,13 +345,22 @@
             <!-- services -->
             <section class="services">
                 <div class="container">
-                    <div class="services-top">
+                    <div
+                        class="services-top"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <p class="services__question">What we do for you?</p>
                         <h2 class="services__heading heading-2">
                             Our Services
                         </h2>
                     </div>
-                    <div class="services-bottom">
+                    <div
+                        class="services-bottom"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom"
+                    >
                         <article class="services__article">
                             <h3 class="services__title">Puppy Sitting</h3>
                             <p class="services__desc">
@@ -435,13 +481,22 @@
             <!-- team -->
             <section class="team">
                 <div class="container">
-                    <section class="team-top">
+                    <section
+                        class="team-top"
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                    >
                         <p class="team-top__title">Pet Care Staff</p>
                         <h2 class="team__heading heading-2">
                             Meet Our Groomers
                         </h2>
                     </section>
-                    <section class="team-bottom">
+                    <section
+                        class="team-bottom"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-center"
+                    >
                         <ul class="team-list">
                             <li class="item-team">
                                 <div
@@ -647,7 +702,7 @@
             <!-- price -->
             <section class="price">
                 <div class="container">
-                    <section class="price-header">
+                    <section class="price-header" data-aos="zoom-out-right">
                         <h2 class="price__heading heading-2">
                             The Best Choice
                         </h2>
@@ -664,7 +719,7 @@
                         </div>
                     </section>
                     <section class="price-body">
-                        <div class="price-card">
+                        <div class="price-card" data-aos="zoom-out-right">
                             <h4 class="price-card__title">Basic</h4>
                             <p class="price-card__sub-title">Day care</p>
                             <strong>$150</strong>
@@ -687,7 +742,7 @@
                                 <li class="price__item">Grooming 2x</li>
                             </ul>
                         </div>
-                        <div class="price-card">
+                        <div class="price-card" data-aos="zoom-out-center">
                             <h4 class="price-card__title">Exclusive</h4>
                             <p class="price-card__sub-title">2X Care</p>
                             <strong>$199</strong>
@@ -712,7 +767,7 @@
                                 <li class="price__item">Grooming 2x</li>
                             </ul>
                         </div>
-                        <div class="price-card">
+                        <div class="price-card" data-aos="zoom-out-left">
                             <h4 class="price-card__title">Platinum</h4>
                             <p class="price-card__sub-title">4X Care</p>
                             <strong>$299</strong>
@@ -748,7 +803,7 @@
             <section class="feedback">
                 <div class="container">
                     <div class="main-feedback">
-                        <ul class="feedback__list">
+                        <ul class="feedback__list" data-aos="fade-right">
                             <li class="feedback__item">
                                 <figure class="feedback__images">
                                     <img
@@ -854,7 +909,7 @@
             <!-- blog -->
             <section class="blog">
                 <div class="container">
-                    <section class="blog-header">
+                    <section class="blog-header" data-aos="flip-right">
                         <h2 class="blog__heading heading-2">Our Blog</h2>
                         <div class="blog-content">
                             <p class="blog__desc line-clamp">
@@ -865,7 +920,7 @@
                         </div>
                     </section>
                     <section class="blog-body">
-                        <section class="blog-list">
+                        <section class="blog-list" data-aos="zoom-in">
                             <!-- item 1 -->
                             <article class="blog-item">
                                 <div
@@ -997,7 +1052,7 @@
                                 <li class="footer__item">About Us</li>
                                 <li class="footer__item">Services</li>
                                 <li class="footer__item">Our Team</li>
-                                <li class="footer__item"> Adopt Pet</li>
+                                <li class="footer__item">Adopt Pet</li>
                             </ul>
                         </div>
                         <div class="footer__item-link">
@@ -1015,15 +1070,23 @@
                             <ul class="footer__list">
                                 <li class="footer__item">abc@gmail.com</li>
                                 <li class="footer__item">0 (800)-000-00-00</li>
-                                <li class="footer__item">New York, NY, Ran 7</li>
+                                <li class="footer__item">
+                                    New York, NY, Ran 7
+                                </li>
                             </ul>
                         </div>
                         <div class="footer__item-link">
                             <h4 class="footer__title">Opening Time</h4>
                             <ul class="footer__list">
-                                <li class="footer__item">Mon – Fri : 08.00 am – 20.00 pm</li>
-                                <li class="footer__item">Saturday : 09.00 am – 20.00 pm</li>
-                                <li class="footer__item">Sunday: We are Closed</li>
+                                <li class="footer__item">
+                                    Mon – Fri : 08.00 am – 20.00 pm
+                                </li>
+                                <li class="footer__item">
+                                    Saturday : 09.00 am – 20.00 pm
+                                </li>
+                                <li class="footer__item">
+                                    Sunday: We are Closed
+                                </li>
                             </ul>
                         </div>
                     </aside>
@@ -1031,5 +1094,9 @@
                 </section>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
